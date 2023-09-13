@@ -48,7 +48,7 @@ const View = ({data}) =>{
 	return(
 		<>
 			<div className="char__basics">
-				<Link to={`/characters/${id}`}>
+				<Link to={`/marvelAPI/characters/${id}`}>
 					<img src={thumbnail} alt={name} style={{ objectFit: `${imgFit}`}}/>
 				</Link>
 					<div>
@@ -74,7 +74,7 @@ const View = ({data}) =>{
 							if(i>9) return null;
 							
 							return(
-								<Link to={`/comics/${item.resourceURI.slice(43)}`} className="char__comics-item">
+								<Link to={`/marvelAPI/comics/${item.resourceURI.slice(43)}`} className="char__comics-item">
 									<li key = {i} >
 										{item.name} 
 									</li>

@@ -45,7 +45,7 @@ const ComicsList = () =>{
 			return (
 				<CSSTransition key = {i} classNames={"comicslist__item"} timeout={700}>
 					<li className="comicslist__item">
-						<Link to={`/comics/${item.id}`}>
+						<Link to={`/marvelAPI/comics/${item.id}`}>
 						<div className="comicslist__item__img">
 							<img src={item.thumbnail} style={{ objectFit: `${imgFit}`}} alt={item.title} />
 						</div>
